@@ -1,0 +1,27 @@
+.div {
+  display: block;
+}
+
+.offer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .offer {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .offer {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

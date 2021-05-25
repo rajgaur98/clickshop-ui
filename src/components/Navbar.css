@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  margin: 0;
+  padding-right: 20px;
+  background-color: #021393;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar > h2 {
+  font-style: italic;
+  color: gold;
+  cursor: pointer;
+}
+
+.navbar > img {
+  height: auto;
+  width: 60px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: gold;
+  color: #021393;
+  margin-left: auto;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: larger;
+  color: gold;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+.tab {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: gold;
+}
+
+.tab:hover {
+  cursor: pointer;
+  background-color: #4f4fc1;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  .tab {
+    display: none;
+  }
+  .menu {
+    display: inline;
+    margin: 0 20px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .btn {
+    display: none;
+  }
+  .cart {
+    margin-left: auto;
+  }
+  .navbar > h2 {
+    font-size: large;
+  }
+  .navbar > img {
+    width: 40px;
+  }
+}

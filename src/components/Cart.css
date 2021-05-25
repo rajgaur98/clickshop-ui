@@ -1,0 +1,116 @@
+.cart-container {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.checkout-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 5px 10px;
+  font-size: large;
+  background-color: #021393;
+  color: gold;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.checkout-btn:hover {
+  background-color: rgb(11, 11, 116);
+}
+
+.cart-container .card {
+  box-sizing: border-box;
+  text-align: left;
+  padding: 20px;
+  height: auto;
+  overflow: auto;
+  border-bottom: 1px solid lightgray;
+}
+
+.cart-container .card:first-child {
+  border-top: 1px solid lightgray;
+}
+
+.cart-container .card img {
+  height: 200px;
+  width: 150px;
+  object-fit: contain;
+  float: left;
+  margin-right: 20px;
+}
+
+.cart-container .card .title {
+  font-weight: bold;
+  display: block;
+  font-size: large;
+  color: darkslategrey;
+}
+
+.cart-container .card .fabric {
+  display: block;
+}
+
+.cart-container .card .price {
+  float: right;
+  margin-top: 5px;
+  color: brown;
+  font-size: larger;
+}
+
+.cart-container .total-container {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  text-align: left;
+  color: brown;
+  font-size: larger;
+}
+
+.cart-container .total-container .price {
+  float: right;
+}
+
+.cart-container .card .remove-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.cart-container .card .remove-btn:hover {
+  background-color: orangered;
+}
+
+@media only screen and (max-width: 1060px) {
+  .checkout-btn {
+    position: static;
+    display: block;
+    margin: 0 auto 50px;
+  }
+  .cart-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cart-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .cart-container .card img {
+    float: none;
+    margin: 0;
+  }
+}

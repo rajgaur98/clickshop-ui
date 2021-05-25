@@ -1,0 +1,60 @@
+.sidebar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #021393;
+  min-height: 100%;
+  width: 300px;
+  color: gold;
+  padding: 20px;
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+.sidebar > img {
+  width: 100px;
+}
+
+.sidebar > h2 {
+  font-style: italic;
+}
+
+.sidebar-icon {
+  color: orange;
+  margin-left: auto;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.sidebar-btn {
+  margin-top: 50px;
+  color: #021393;
+  background-color: gold;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+}
+
+.sidebar-tab {
+  font-size: large;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid #001eb7;
+}
+
+.sidebar .cart {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .sidebar {
+    width: 100%;
+  }
+}

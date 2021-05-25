@@ -1,0 +1,86 @@
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px;
+}
+
+.main-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.main-container .card:hover {
+  box-shadow: 0 0 50px 1px whitesmoke;
+}
+
+.main-container .card img {
+  height: 350px;
+  width: 250px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.main-container .card .title {
+  font-weight: bold;
+  font-size: large;
+  color: darkslategrey;
+}
+
+.main-container .card .rating {
+  font-size: x-small;
+  margin-top: 5px;
+  color: lightgray;
+}
+
+.checked {
+  color: gold;
+}
+
+.main-container .card .price {
+  margin-top: 5px;
+  color: brown;
+  font-size: larger;
+}
+
+.main-container .card .delivery {
+  color: gray;
+}
+
+.main-container .card .add-btn {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: medium;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-container .card .add-btn:hover {
+  background-color: olive;
+}
+
+.main-container .card .add-btn i {
+  font-size: medium;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .main-container .card img {
+    height: 250px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+}
