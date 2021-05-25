@@ -1,5 +1,5 @@
 const config = {
-  BASE_URL: "http://localhost:5000/api",
+  BASE_URL: "https://clickshop-backend.herokuapp.com/api",
 };
 
 export default config;
