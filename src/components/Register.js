@@ -16,6 +16,9 @@ function Register() {
   const history = useHistory();
 
   const register = async () => {
+    if (!validateEmail(email)) return;
+    if (!validatePassword(password)) return;
+    if (password !== confirmPassword) return;
     setLoading(true);
     try {
       const response = await fetch(`${config.BASE_URL}/register`, {
