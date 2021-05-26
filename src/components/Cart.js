@@ -36,8 +36,10 @@ function Cart(props) {
         const data = await response.json();
         console.log(data);
         let newTotal = 0;
-        data.forEach((product) => (newTotal += product.price));
-        setTotal(newTotal);
+        for (const d of data) {
+          newTotal += d.product.price;
+        }
+        setTotal(newTotal.toFixed(2));
         setProducts(data);
         setLoading(false);
       } else {
@@ -70,7 +72,7 @@ function Cart(props) {
   return (
     <div style={{ position: "relative" }}>
       <div className="cart-container">
-        {products.map((product) => {
+        {products.map(({ product, _id }) => {
           return (
             <div className="card" key={product._id}>
               <span className="price">
@@ -87,7 +89,7 @@ function Cart(props) {
                 className="remove-btn"
                 type="button"
                 value="Remove Item"
-                onClick={() => fetchProducts(product.order_id)}
+                onClick={() => fetchProducts(_id)}
               />
             </div>
           );
